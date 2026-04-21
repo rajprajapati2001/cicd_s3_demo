@@ -20,4 +20,4 @@ jobs:
           aws-region: ap-south-1 # Change this to your bucket's region (e.g., ap-south-1 for Mumbai)
 
       - name: Upload to S3
-        run: aws s3 sync . s3://cicd-s3-demo --exclude ".git/*" --exclude ".github/*"
+        run: aws s3 sync . s3://amazon-cicd --exclude ".git/*" --exclude ".github/*"
